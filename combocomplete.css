@@ -1,0 +1,14 @@
+.ui-combocomplete { display: inline-block; }
+.ui-combocomplete .ui-combocomplete-label 
+  { width: 100px; text-align: left; }
+.ui-combocomplete .ui-combocomplete-select 
+  { width: 98px; margin-right: 0.1em; display: inline-block; 
+    padding: 0; overflow: visible; position: relative; }
+.ui-combocomplete .ui-combocomplete-select .ui-combocomplete-text
+  { padding: 0.4em; display: block; line-height: 1.4; text-indent: -9999px; }
+.ui-combocomplete .ui-combocomplete-select .ui-autocomplete-input 
+  { position: absolute; display: block; top: 50%; overflow: hidden; 
+    padding: 2px; margin-top: -0.8em; margin-left: 2px; border: none; 
+    width: 90px;}
+
+

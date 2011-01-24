@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>eselect test page</title>
+  <link type="text/css" href="jquery-ui-1.8.9.custom.css" rel="stylesheet" >
+  <link type="text/css" href="../combocomplete.css" rel="stylesheet" >
+  <script type="text/javascript" src="jquery-1.4.4.min.js"></script>
+  <script type="text/javascript" src="jquery-ui-1.8.9.custom.min.js"></script>
+  <script type="text/javascript" src="../combocomplete.js"></script>
+
+  <style>
+    body { font-size: 10px; padding: 4em;}
+    #a-selector { width: 50%;} 
+/*
+    .ui-combocomplete .ui-button-text { padding: 4px 4px; }
+    .ui-combocomplete .ui-combocomplete-select .ui-combocomplete-text { padding: 4px 4px; }
+*/
+  </style>
+
+  <script type="text/javascript">
+    $(function(){
+      var words = [{label : "one", id : "1"}, {label:"two",id:"2"}, {label:"three", id:"3"}, {label:"four",id:4}];      
+//      $('#a-selector').combocomplete( { source : words, value : { id : "1", label : "one" } } );
+      $('#a-selector').combocomplete( { source : words } );
+      $('#set-value').click(function(){$('#a-selector').combocomplete("option", "value", { label:"two", id:"2" });});
+    });
+  </script>
+</head>
+<body>
+  <div id="a-selector" name="var1"></div>
+  <div style="margin-top: 3px; font-family: Arial, Sans-Serif;">Please enter &quot;o&quot;, &quot;t&quot; or &quot;f&quot; letters</div>
+  <div style="padding-top: 2em;">
+    <button id="set-value">set value</button>
+  </div>
+</body>
+</html>
